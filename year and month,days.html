@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = prompt("enter year");
+      var b = prompt("enter month name");
+      switch (b) {
+        case `january`:
+          document.write(31);
+          break;
+        case `february`:
+          if ((a % 100 !== 0 && a % 4 == 0) || a % 400 == 0) {
+            document.write(29);
+          } else {
+            document.write(28);
+          }
+          break;
+        case `march`:
+          document.write(31);
+          break;
+        case `april`:
+          document.write(30);
+          break;
+        case `may`:
+          document.write(31);
+          break;
+        case `june`:
+          document.write(30);
+          break;
+        case `july`:
+          document.write(31);
+          break;
+        case `Agust`:
+          document.write(31);
+          break;
+        case `september`:
+          document.write(30);
+          break;
+        case `october`:
+          document.write(31);
+          break;
+        case `november`:
+          document.write(30);
+          break;
+        case `december`:
+          document.write(31);
+          break;
+        default:
+          document.write(`invaled entry`);
+      }
+    </script>
+  </body>
+</html>
